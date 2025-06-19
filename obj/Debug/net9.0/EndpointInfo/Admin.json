@@ -1,0 +1,931 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "Admin",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Appointment": {
+      "get": {
+        "tags": [
+          "Appointment"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Appointment"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddAppointmentDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddAppointmentDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddAppointmentDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Appointment/{id}": {
+      "get": {
+        "tags": [
+          "Appointment"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Appointment"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UptadeAppointments"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UptadeAppointments"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UptadeAppointments"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Appointment"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Appointment/count": {
+      "get": {
+        "tags": [
+          "Appointment"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Departament": {
+      "get": {
+        "tags": [
+          "Department"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Department"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddDepartmentDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddDepartmentDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddDepartmentDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Departament/{id}": {
+      "get": {
+        "tags": [
+          "Department"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Department"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UptadeDepartamentscs"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UptadeDepartamentscs"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UptadeDepartamentscs"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Department"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Departament/count": {
+      "get": {
+        "tags": [
+          "Department"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Doctors": {
+      "get": {
+        "tags": [
+          "Doctor"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Doctors/{id}": {
+      "get": {
+        "tags": [
+          "Doctor"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Doctor"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Doctors/debug-form": {
+      "post": {
+        "tags": [
+          "Doctor"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "Departament.DepartamentName",
+                  "Departament.IsActive"
+                ],
+                "type": "object",
+                "properties": {
+                  "FirstName": {
+                    "type": "string"
+                  },
+                  "LastName": {
+                    "type": "string"
+                  },
+                  "DepartmentId": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "AvatarFile": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "WorkingHoursStart": {
+                    "type": "string",
+                    "format": "date-span"
+                  },
+                  "WorkingHoursEnd": {
+                    "type": "string",
+                    "format": "date-span"
+                  },
+                  "Departament.Id": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "Departament.DepartamentName": {
+                    "type": "string"
+                  },
+                  "Departament.IsActive": {
+                    "type": "boolean"
+                  },
+                  "Departament.Doctors": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/Doctors"
+                    }
+                  },
+                  "Departament.Appointments": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/Appointments"
+                    }
+                  }
+                }
+              },
+              "encoding": {
+                "FirstName": {
+                  "style": "form"
+                },
+                "LastName": {
+                  "style": "form"
+                },
+                "DepartmentId": {
+                  "style": "form"
+                },
+                "AvatarFile": {
+                  "style": "form"
+                },
+                "WorkingHoursStart": {
+                  "style": "form"
+                },
+                "WorkingHoursEnd": {
+                  "style": "form"
+                },
+                "Departament.Id": {
+                  "style": "form"
+                },
+                "Departament.DepartamentName": {
+                  "style": "form"
+                },
+                "Departament.IsActive": {
+                  "style": "form"
+                },
+                "Departament.Doctors": {
+                  "style": "form"
+                },
+                "Departament.Appointments": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Doctors/count": {
+      "get": {
+        "tags": [
+          "Doctor"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Doctors/upload-avatars": {
+      "post": {
+        "tags": [
+          "Doctor"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "FirstName": {
+                    "type": "string"
+                  },
+                  "LastName": {
+                    "type": "string"
+                  },
+                  "DepartmentId": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "WorkingHoursStart": {
+                    "type": "string",
+                    "format": "date-span"
+                  },
+                  "WorkingHoursEnd": {
+                    "type": "string",
+                    "format": "date-span"
+                  },
+                  "AvatarFile": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "FirstName": {
+                  "style": "form"
+                },
+                "LastName": {
+                  "style": "form"
+                },
+                "DepartmentId": {
+                  "style": "form"
+                },
+                "WorkingHoursStart": {
+                  "style": "form"
+                },
+                "WorkingHoursEnd": {
+                  "style": "form"
+                },
+                "AvatarFile": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Doctors/update-with-avatar/{id}": {
+      "put": {
+        "tags": [
+          "Doctor"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "Departament.DepartamentName",
+                  "Departament.IsActive"
+                ],
+                "type": "object",
+                "properties": {
+                  "FirstName": {
+                    "type": "string"
+                  },
+                  "LastName": {
+                    "type": "string"
+                  },
+                  "DepartmentId": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "AvatarFile": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "WorkingHoursStart": {
+                    "type": "string",
+                    "format": "date-span"
+                  },
+                  "WorkingHoursEnd": {
+                    "type": "string",
+                    "format": "date-span"
+                  },
+                  "Departament.Id": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "Departament.DepartamentName": {
+                    "type": "string"
+                  },
+                  "Departament.IsActive": {
+                    "type": "boolean"
+                  },
+                  "Departament.Doctors": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/Doctors"
+                    }
+                  },
+                  "Departament.Appointments": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/Appointments"
+                    }
+                  }
+                }
+              },
+              "encoding": {
+                "FirstName": {
+                  "style": "form"
+                },
+                "LastName": {
+                  "style": "form"
+                },
+                "DepartmentId": {
+                  "style": "form"
+                },
+                "AvatarFile": {
+                  "style": "form"
+                },
+                "WorkingHoursStart": {
+                  "style": "form"
+                },
+                "WorkingHoursEnd": {
+                  "style": "form"
+                },
+                "Departament.Id": {
+                  "style": "form"
+                },
+                "Departament.DepartamentName": {
+                  "style": "form"
+                },
+                "Departament.IsActive": {
+                  "style": "form"
+                },
+                "Departament.Doctors": {
+                  "style": "form"
+                },
+                "Departament.Appointments": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AddAppointmentDto": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "appointmentDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "appointmentTime": {
+            "type": "string",
+            "format": "date-span",
+            "nullable": true
+          },
+          "doctorId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "doctor": {
+            "$ref": "#/components/schemas/Doctors"
+          },
+          "departamentId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "departament": {
+            "$ref": "#/components/schemas/Departament"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AddDepartmentDto": {
+        "required": [
+          "departamentName",
+          "isActive"
+        ],
+        "type": "object",
+        "properties": {
+          "departamentName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Appointments": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "appointmentId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "appointmentDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "appointmentTime": {
+            "type": "string",
+            "format": "date-span",
+            "nullable": true
+          },
+          "doctorId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "doctor": {
+            "$ref": "#/components/schemas/Doctors"
+          },
+          "departamentId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "departament": {
+            "$ref": "#/components/schemas/Departament"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Departament": {
+        "required": [
+          "departamentName",
+          "isActive"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "departamentName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean"
+          },
+          "doctors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Doctors"
+            },
+            "nullable": true
+          },
+          "appointments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Appointments"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Doctors": {
+        "type": "object",
+        "properties": {
+          "doctorId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "firstName": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastName": {
+            "type": "string",
+            "nullable": true
+          },
+          "departmentId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "avatar": {
+            "type": "string",
+            "nullable": true
+          },
+          "workingHoursStart": {
+            "type": "string",
+            "format": "date-span",
+            "nullable": true
+          },
+          "workingHoursEnd": {
+            "type": "string",
+            "format": "date-span",
+            "nullable": true
+          },
+          "departament": {
+            "$ref": "#/components/schemas/Departament"
+          },
+          "avatarFile": {
+            "type": "string",
+            "format": "binary",
+            "nullable": true
+          },
+          "appointments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Appointments"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UptadeAppointments": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "appointmentDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "appointmentTime": {
+            "type": "string",
+            "format": "date-span",
+            "nullable": true
+          },
+          "doctorId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "doctor": {
+            "$ref": "#/components/schemas/Doctors"
+          },
+          "departamentId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "departament": {
+            "$ref": "#/components/schemas/Departament"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UptadeDepartamentscs": {
+        "required": [
+          "departamentName",
+          "isActive"
+        ],
+        "type": "object",
+        "properties": {
+          "departamentName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
