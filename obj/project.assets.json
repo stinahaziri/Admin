@@ -5394,11 +5394,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ComCenter\\source\\repos\\Admin\\Admin\\Admin.csproj",
+      "projectUniqueName": "C:\\Users\\ComCenter\\Admin-3\\Admin.csproj",
       "projectName": "Admin",
-      "projectPath": "C:\\Users\\ComCenter\\source\\repos\\Admin\\Admin\\Admin.csproj",
+      "projectPath": "C:\\Users\\ComCenter\\Admin-3\\Admin.csproj",
       "packagesPath": "C:\\Users\\ComCenter\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ComCenter\\source\\repos\\Admin\\Admin\\obj\\",
+      "outputPath": "C:\\Users\\ComCenter\\Admin-3\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
