@@ -1,0 +1,11 @@
+[phases.setup]
+nixPkgs = ['dotnet-sdk_6']
+
+[phases.build]
+cmds = [
+  'dotnet restore Admin.csproj',
+  'dotnet publish Admin.csproj -c Release -o out'
+]
+
+[start]
+cmd = './out/Admin'
