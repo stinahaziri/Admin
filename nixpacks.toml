@@ -1,5 +1,6 @@
 [phases.setup]
-nixPkgs = ['dotnet-sdk_6']
+nixPkgs = ['dotnet-sdk_9']
+runtimePkgs = ['dotnet-sdk_9']
 
 [phases.build]
 cmds = [
@@ -8,4 +9,4 @@ cmds = [
 ]
 
 [start]
-cmd = './out/Admin.dll'
+cmd = 'dotnet out/Admin.dll'
