@@ -1,6 +1,37 @@
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Doctors from "./doctors.jsx";
+import AddDoctors from "./add-doctors.jsx";
+import EditDoctor from "./editDoctor.jsx";
+
+import Appointment from "./appointments.jsx";
+import AddAppointment from "./addAppointment.jsx";
+import EditAppointment from "./editAppointment.jsx";
+
+import Department from "./departaments.jsx";
+import AddDepartament from "./addDepartament.jsx";
+import EditDepartament from "./editDepartmanet.jsx";
+
+import Index from "./index.jsx";
+
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
 export default function App() {
   return (
     <BrowserRouter basename="/Admin">
+      {/* Header me emrin Admin */}
+      <div
+        style={{
+          textAlign: "center",
+          margin: "20px 0",
+          fontWeight: "bold",
+          fontSize: "2rem",
+          letterSpacing: "2px",
+        }}
+      >
+        Admin
+      </div>
       <Routes>
         {/* Main Page */}
         <Route path="/" element={<Index />} />
@@ -23,3 +54,4 @@ export default function App() {
     </BrowserRouter>
   );
 }
+
