@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Doctors from "./doctors.jsx";
@@ -7,7 +8,9 @@ import EditDoctor from "./editDoctor.jsx";
 
 import Appointment from "./appointments.jsx";
 import AddAppointment from "./addAppointment.jsx";
-import EditAppointment from "./editAppointment.jsx";
+import EditAppointment from "./editAppointment.jsx"
+
+
 
 import Department from "./departaments.jsx";
 import AddDepartament from "./addDepartament.jsx";
@@ -19,19 +22,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 export default function App() {
   return (
-    <BrowserRouter basename="/Admin">
-      {/* Header me emrin Admin */}
-      <div
-        style={{
-          textAlign: "center",
-          margin: "20px 0",
-          fontWeight: "bold",
-          fontSize: "2rem",
-          letterSpacing: "2px",
-        }}
-      >
-        Admin
-      </div>
+    <BrowserRouter>
       <Routes>
         {/* Main Page */}
         <Route path="/" element={<Index />} />
@@ -39,12 +30,14 @@ export default function App() {
         {/* Doctors */}
         <Route path="/doctors" element={<Doctors />} />
         <Route path="/add-doctor" element={<AddDoctors />} />
-        <Route path="/edit-doctor/:id" element={<EditDoctor />} />
+        <Route path="/edit-doctor/:id" element={<EditDoctor/>} />
 
         {/* Appointments */}
         <Route path="/appointments" element={<Appointment />} />
         <Route path="/add-appointment" element={<AddAppointment />} />
-        <Route path="/editAppointment/:id" element={<EditAppointment />} />
+        <Route path="/editAppointment/:id" element={<EditAppointment />}/>
+
+      
 
         {/* Departments */}
         <Route path="/department" element={<Department />} />
@@ -54,4 +47,3 @@ export default function App() {
     </BrowserRouter>
   );
 }
-
