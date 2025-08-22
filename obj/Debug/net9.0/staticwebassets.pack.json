@@ -1,0 +1,65 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ComCenter\\Admin-7\\wwwroot\\assets\\fontawesome-webfont-B-jkhYfk.woff2",
+      "PackagePath": "staticwebassets\\assets\\fontawesome-webfont-B-jkhYfk.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ComCenter\\Admin-7\\wwwroot\\assets\\fontawesome-webfont-CDK5bt4p.woff",
+      "PackagePath": "staticwebassets\\assets\\fontawesome-webfont-CDK5bt4p.woff"
+    },
+    {
+      "Id": "C:\\Users\\ComCenter\\Admin-7\\wwwroot\\assets\\fontawesome-webfont-CQDK8MU3.ttf",
+      "PackagePath": "staticwebassets\\assets\\fontawesome-webfont-CQDK8MU3.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ComCenter\\Admin-7\\wwwroot\\assets\\fontawesome-webfont-D13rzr4g.svg",
+      "PackagePath": "staticwebassets\\assets\\fontawesome-webfont-D13rzr4g.svg"
+    },
+    {
+      "Id": "C:\\Users\\ComCenter\\Admin-7\\wwwroot\\assets\\fontawesome-webfont-G5YE5S7X.eot",
+      "PackagePath": "staticwebassets\\assets\\fontawesome-webfont-G5YE5S7X.eot"
+    },
+    {
+      "Id": "C:\\Users\\ComCenter\\Admin-7\\wwwroot\\assets\\index-C0jGJBE6.js",
+      "PackagePath": "staticwebassets\\assets\\index-C0jGJBE6.js"
+    },
+    {
+      "Id": "C:\\Users\\ComCenter\\Admin-7\\wwwroot\\assets\\index-D_xeIM1Y.css",
+      "PackagePath": "staticwebassets\\assets\\index-D_xeIM1Y.css"
+    },
+    {
+      "Id": "C:\\Users\\ComCenter\\Admin-7\\wwwroot\\assets\\logo-BWgiNWev.png",
+      "PackagePath": "staticwebassets\\assets\\logo-BWgiNWev.png"
+    },
+    {
+      "Id": "C:\\Users\\ComCenter\\Admin-7\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\ComCenter\\Admin-7\\wwwroot\\vite.svg",
+      "PackagePath": "staticwebassets\\vite.svg"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Admin.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Admin.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.Admin.props",
+      "PackagePath": "build\\Admin.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.Admin.props",
+      "PackagePath": "buildMultiTargeting\\Admin.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.Admin.props",
+      "PackagePath": "buildTransitive\\Admin.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

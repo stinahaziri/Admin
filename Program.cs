@@ -40,7 +40,10 @@ var app = builder.Build();
 Console.WriteLine("Conn: " + builder.Configuration.GetConnectionString("DefaultConnection"));
 
 // Aktivizo Static Files për folderin "Images"
-app.UseStaticFiles(); // për wwwroot nëse përdoret
+app.UseDefaultFiles();
+app.UseStaticFiles();
+app.MapFallbackToFile("index.html");
+
 app.UseStaticFiles(new StaticFileOptions
 {
     FileProvider = new PhysicalFileProvider(
