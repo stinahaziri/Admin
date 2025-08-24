@@ -852,8 +852,3 @@ C:\Users\ComCenter\Admin-7\obj\Debug\net9.0\Admin.pdb
 C:\Users\ComCenter\Admin-7\obj\Debug\net9.0\Admin.genruntimeconfig.cache
 C:\Users\ComCenter\Admin-7\obj\Debug\net9.0\ref\Admin.dll
 C:\Users\ComCenter\Admin-7\bin\Debug\net9.0\Admin.staticwebassets.runtime.json
-C:\Users\ComCenter\Admin-7\obj\Debug\net9.0\compressed\dkjdr1g61n-dosqy3kf6t.gz
-C:\Users\ComCenter\Admin-7\obj\Debug\net9.0\compressed\4u6g7s0ec3-m7m58c2izk.gz
-C:\Users\ComCenter\Admin-7\obj\Debug\net9.0\compressed\rzw2e7zrls-ri75xbtvmg.gz
-C:\Users\ComCenter\Admin-7\obj\Debug\net9.0\compressed\xlmig8lyjk-43seuztqis.gz
-C:\Users\ComCenter\Admin-7\obj\Debug\net9.0\compressed\0ajf2c0mg2-69kjnsiwqx.gz
