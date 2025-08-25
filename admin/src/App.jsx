@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import Doctors from "./doctors.jsx";
 import AddDoctors from "./add-doctors.jsx";
@@ -43,6 +43,12 @@ export default function App() {
         <Route path="/department" element={<Department />} />
         <Route path="/add-departament" element={<AddDepartament />} />
         <Route path="/edit-departament/:id" element={<EditDepartament />} />
+
+        {/* Redirect from /Admin/ to home page */}
+        <Route path="/Admin/" element={<Navigate to="/" />} />
+
+        {/* Catch-all route for 404 Not Found */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );

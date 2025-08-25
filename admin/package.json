@@ -1,7 +1,7 @@
 {
   "name": "admin",
   "private": true,
-   "homepage":  "https://stinahaziri.github.io/Admin/",
+   "homepage":  "",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
