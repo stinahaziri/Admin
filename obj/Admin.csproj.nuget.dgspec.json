@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ComCenter\\Admin-7\\Admin.csproj": {}
+    "C:\\Users\\ComCenter\\Desktop\\before\\Admin\\Admin.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ComCenter\\Admin-7\\Admin.csproj": {
+    "C:\\Users\\ComCenter\\Desktop\\before\\Admin\\Admin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ComCenter\\Admin-7\\Admin.csproj",
+        "projectUniqueName": "C:\\Users\\ComCenter\\Desktop\\before\\Admin\\Admin.csproj",
         "projectName": "Admin",
-        "projectPath": "C:\\Users\\ComCenter\\Admin-7\\Admin.csproj",
+        "projectPath": "C:\\Users\\ComCenter\\Desktop\\before\\Admin\\Admin.csproj",
         "packagesPath": "C:\\Users\\ComCenter\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ComCenter\\Admin-7\\obj\\",
+        "outputPath": "C:\\Users\\ComCenter\\Desktop\\before\\Admin\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
