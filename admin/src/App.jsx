@@ -47,8 +47,7 @@ export default function App() {
         {/* Redirect from /Admin/ to home page */}
         <Route path="/Admin/" element={<Navigate to="/" />} />
 
-        {/* Catch-all route for 404 Not Found */}
-        <Route path="*" element={<NotFound />} />
+  
       </Routes>
     </BrowserRouter>
   );
